@@ -17,22 +17,11 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        myMethod(){
-
+        AddBook(book){
+            this.books.push(book);
+            console.log('Book added:', book);
+            },
         },
-        AddBook(){
-            this.books.push({
-                id: this.id,
-                title: this.title,
-                author: this.author,
-                published: this.published
-            });
-            this.id = 0;
-            this.title = '';
-            this.author = '';
-            this.published = 0;
-        },
-    },
     computed: {
         myComputed() {
             return ''
