@@ -11,7 +11,8 @@ const app = Vue.createApp({
             title:'',
             author:'',
             published:0,
-            showBooksList: false
+            showBooksList: false,
+            bookList: []
             
         }
     },

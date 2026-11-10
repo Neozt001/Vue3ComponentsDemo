@@ -28,18 +28,23 @@
       <h1>_____________________________</h1>
       <H2>Show all the books</H2>
 
-      <h2>Books List</h2>
+      <book-details :book-list="books"></book-details>
+
+      <!-- <h2>Books List</h2>
       <div>       
         <ul>
           <li v-for="book in books" :key="book.id">
             {{ book.title }} by {{ book.author }} ({{ book.published }})
           </li>
         </ul> 
-      </div>
+      </div> -->
+
+      <!-- end div -->
     </div>
 
     <!-- Import App -->
     <script src="./js/main.js"></script>
+    <script src="./components/book_details.js"></script>
 
     <!-- Mount App -->
     <script>
